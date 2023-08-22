@@ -1,0 +1,58 @@
+.gallerymainimage{
+    width: 80%;
+    display: flex;
+    margin: 0 auto;
+    margin-top: 10px;
+    transition: 0.5s;
+    
+}
+.gallerymainimage:hover{
+    width: 100%;
+    transition: 0.5s;
+}
+
+.gallerycontainer{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.imagecontainer{
+    width: 150px;
+    height: 150px;
+    transition: 0.5s;
+    border-color: black;
+    
+
+}
+
+
+.imagesincontainer{
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 90px;
+    border: 2px solid #000;
+    transition: 10s;
+    
+}
+
+.imagesincontainer:hover{
+    width: 400px;
+    height: 100%;
+    max-width: 100%;
+    transition: 0.5s;
+    border-radius: 15px;
+    z-index: -10px;
+}
+
+
+/* @media only screen and (max-width: 600px) {
+    body {
+
+        background-image: url(img/barber2.jpeg);
+        backdrop-filter: blur(5px);
+    }
+} */
