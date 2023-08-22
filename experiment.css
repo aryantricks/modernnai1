@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.gallery {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.big-image-container {
+    flex: 1;
+    text-align: center;
+}
+
+#bigImage {
+    max-width: 800px;
+    width: 90%;
+    transition: transform 0.3s, opacity 0.3s;
+    border-radius: 10px;
+
+}
+
+.thumbnail-container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    max-height: calc(100vh - 20px);
+    overflow-y: auto;
+    overflow-x: auto;
+}
+
+.thumbnail {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 2px solid black;
+    margin: 5px;
+    cursor: pointer;
+    transition: transform 0.3s  ;
+}
+
+.thumbnail:hover {
+    transform: scale(1.2);
+}
+.thumbnail.active {
+    border-color: white; /* Change border color for active thumbnail */
+  }
